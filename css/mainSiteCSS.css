@@ -1,0 +1,354 @@
+.main
+{
+    background-color: #EBB014;
+
+    /* itt a színpaletta, amit használtam, meg több elemnél is jó ha használjuk sztem: */
+    /* https://www.schemecolor.com/pubg.php  */
+
+    font-family: "Arial Black", serif;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+#top::first-letter
+{
+    font-size: 110%;
+}
+
+
+
+#top
+{
+    text-shadow: 2px 2px #FFDE40 ;
+
+}
+
+section{
+    background-color: rgba(255, 255, 255, .30) ;
+}
+
+
+::selection
+{
+    background-color: lightblue;
+}
+
+/*a menüszövegek amelyikek oldalán nem vagyunk*/
+a[href]
+{
+    color: white;
+}
+
+div{
+    margin-top: 1%;
+}
+
+.center
+{
+    text-align: center;
+}
+
+/*amin vagyunk annak szövege navban*/
+#currentSite
+{
+    color: #FFF512;
+}
+
+table{
+    /*centering*/
+    max-width:30%;
+    width:30%;
+
+    margin:1%;
+    border-radius: 5px;
+    border:none;
+    table-layout: fixed;
+    display:block;
+    /*border: white;*/
+}
+
+caption
+{
+    /*táblázat feletti szöveg, fegyver típus*/
+    font-size: x-large;
+}
+
+/*táblázat*/
+/*fejléc*/
+th
+{
+    /*fix oszlopméret*/
+    width: 30%;
+
+    text-align: center;
+    font-size: x-large;
+    background: rgba(0, 0, 0, .5);
+    line-height: 50px;
+}
+
+/*adatok*/
+td
+{
+    width: 10%;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+body {
+    margin: 3%;
+    font-family: "Arial Black", serif;
+    /*background-image: url("../img/background.jpg");*/
+}
+
+/*most a mapekre van használva, de nyilv minden img re vonatkozna*/
+img
+{
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.bemutatoSzoveg
+{
+    display: inline-block;
+}
+
+nav
+{
+    clear: left;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.nav-border {
+    border-radius: 30px;
+}
+nav a
+{
+    align-self: center;
+    vertical-align: center;
+    color: white;
+}
+
+nav a:hover
+{
+    color: #03e9f4;
+}
+
+.neonpicgood
+{
+    transition: transform 0.25s;
+    transform: scale(1);
+    float: right; border-radius: 40px; scale: 0.5;transform-origin: right; margin-right: 6%; margin-top: 14%;
+}
+
+.select
+{
+    float: right;
+    padding: 5px 10px;
+
+    background: #172031;
+    border-radius: 5px;
+    color: white;
+    margin-top: 8px;
+
+}
+
+.divselect
+{
+    margin-top: 10px;
+}
+
+.neonpicgood:hover
+{
+    transition: transform 0.3s, filter 0.3s;
+    transform: scale(1.1);
+    border: #03e9f4;
+    filter: brightness(120%);
+
+}
+
+
+/*menüsor háttérszíne beállítva itt!*/
+nav ul{background-color:  rgba(0, 0, 0, .5);
+    word-spacing: 0.3em;
+    font-weight: lighter;
+    align-self: center;
+    vertical-align: center;
+    float: right;
+margin-right: 1%;
+padding: 0.4% 3%;
+    size: 1000px;
+    border-radius: 10px;
+
+}
+
+
+/* videoWrapper optimalizálja a videót több screen sizera */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav ul li
+{
+    display: inline-block;
+    font-size: 1.3em;
+    color: white;
+
+}
+
+
+
+#weaponSkinDiv{
+    overflow-x:auto ;
+    width: 100%;
+}
+#weaponSkinTable{
+
+}
+.weaponSkinImg{
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s
+}
+
+/*az x re külön van*/
+.weaponSkinImgWrong{
+    width: 120px;
+    height: 120px;
+}
+
+.weaponSkinImg:hover{
+    transform: scale(2);
+}
+
+.floatingCrate:hover{
+    transform: scale(1.5);
+}
+
+
+th{
+    width: max-content
+}
+.floatingCrate{
+    float: right;
+    transform:   rotate(40deg) scaleX(0.9) ;
+    height: 240px;
+    width: 240px;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+
+    transition: transform 0.3s
+}
+
+.floatingMapImg{
+    border: 3px solid #090907;
+    float: right;
+    border-radius: 4%;
+    width: 500px;
+    height: 271px;
+
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+
+    transition: transform 0.3s
+
+}
+
+.floatingMapImg:hover
+{
+    transform: scale(1.2);
+
+}
+
+/*kisebb screeneknél le-scalel a map hogy ne foglaljon el mindent*/
+@media only screen and (max-width: 900px) {
+    .floatingMapImg {
+        float: right;
+        border-radius: 4%;
+        width: 55%;
+        height: 55%;
+    }
+}
+
+.mapData{
+    width: 40%;
+}
+
+.formDiv{
+    padding-top: 3%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.formPic{
+    width: 120px;
+    height: 120px;
+    transition: transform 0.5s;
+}
+.formPic:hover{
+    transform: scale(3.0);
+}
